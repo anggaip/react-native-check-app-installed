@@ -1,31 +1,31 @@
 {
-    "name": "react-native-check-app-install",
-    "version": "0.0.6",
+    "name": "react-native-check-app-installed",
+    "version": "0.0.7",
     "description": "React Native plugin for checking if apps/packages are installed on the device or not.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "peerDependencies": {
-        "react-native": ">=0.40.0",
-        "react": ">=15.4.0"
+        "react": ">=15.4.0",
+        "react-native": ">=0.40.0"
     },
     "keywords": [
         "app-install",
         "react-native",
-        "react-component",
+        "check-app-install",
         "ios",
         "android"
     ],
-    "author": "RedPandaTronics LTD",
+    "author": "AnggaIP",
     "license": "MIT",
     "nativePackage": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/redpandatronicsuk/react-native-check-app-install.git"
+        "url": "git+https://github.com/anggaip/react-native-check-app-installed.git"
     },
     "bugs": {
-        "url": "https://github.com/redpandatronicsuk/react-native-check-app-install/issues"
+        "url": "https://github.com/anggaip/react-native-check-app-installed/issues"
     },
-    "homepage": "https://github.com/redpandatronicsuk/react-native-check-app-install#readme"
+    "homepage": "https://github.com/anggaip/react-native-check-app-installed#readme"
 }
