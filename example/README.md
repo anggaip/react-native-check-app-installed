@@ -1,5 +1,5 @@
-# react-native-check-app-install demo app
-![iOS](https://github.com/redpandatronicsuk/react-native-check-app-install/raw/master/example/screens/ios.mov-10-320.gif)![Android](https://github.com/redpandatronicsuk/react-native-check-app-install/raw/master/example/screens/android.mov-10-320.gif)
+# react-native-check-app-installed demo app
+![iOS](https://github.com/anggaip/react-native-check-app-installed/raw/master/example/screens/ios.mov-10-320.gif)![Android](https://github.com/anggaip/react-native-check-app-installed/raw/master/example/screens/android.mov-10-320.gif)
 ## Instructions
 ```
 npm i
