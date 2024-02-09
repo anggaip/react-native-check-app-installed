@@ -1,12 +1,27 @@
-# react-native-check-app-installed
+# React Native Check App Installed Getting Started Guide
 
-## Installation
+Here's how to get started quickly with the React Native Check App Installed.
+
+## 1. Installation
+Using yarn:
+```
+yarn add react-native-check-app-installed
+```
+
+Using npm:
+
 ```
 npm i --save react-native-check-app-installed
-react-native link
 ```
 
-## Usage
+## 2. Link native dependencies
+ React Native version 0.60 and later autolinking will take care of the link
+ and for version 0.59 and below you need to run this code:
+```
+react-native link react-native-check-app-installed
+```
+
+## 3. Usage
 Check out the example app in the [example](https://github.com/anggaip/react-native-check-app-installed/tree/master/example) folder.
 
 ```javascript

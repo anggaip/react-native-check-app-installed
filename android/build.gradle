@@ -17,11 +17,10 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', 23)
-    //noinspection GradleDependency
-    buildToolsVersion safeExtGet('buildToolsVersion', '23.0.1')
 
+    namespace "com.rpt.reactnativecheckpackageinstallation"
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 16)
+        minSdkVersion safeExtGet('minSdkVersion', 21)
         //noinspection OldTargetApi
         targetSdkVersion safeExtGet('targetSdkVersion', 23)
         versionCode 1
