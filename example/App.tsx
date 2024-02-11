@@ -86,9 +86,16 @@ class App extends Component<{}, State> {
 
     AppInstalledChecker.getAppList()
       .forEach((appName: string, index: number): void => {
+        let packageName = appName
+
+        if (Platform.OS === 'android') {
+          packageName = AppInstalledChecker.convertAppNameToPackageName(appName)
+        }
+
         checkCounter++
+
         AppInstalledChecker
-          .isAppInstalled(appName)
+          .isAppInstalled(packageName)
           .then((isInstalled: boolean) => {
             checkCounter--
             appCheckResults.push({name: appName, isInstalled: isInstalled, index: index})
@@ -139,7 +146,7 @@ class App extends Component<{}, State> {
     }))
   }
 
-  checkPKGs() {
+  checkPKGs(): void {
     if (Platform.OS === 'ios') {
       return
     }
@@ -149,10 +156,17 @@ class App extends Component<{}, State> {
 
     AppInstalledChecker.getAppList()
       .forEach((appName: string, index: number) => {
+        let packageName = appName
+
+        if (Platform.OS === 'android') {
+          packageName = AppInstalledChecker.convertAppNameToPackageName(appName)
+        }
+
         checkCounterPKG++
+
         AppInstalledChecker
-          .isAppInstalledAndroid(appName)
-          .then((isInstalled: boolean) => {
+          .isAppInstalledAndroid(packageName)
+          .then((isInstalled: boolean): void => {
             checkCounterPKG--
             appCheckResultsPKG.push({name: appName, isInstalled: isInstalled, index: index})
             if (checkCounterPKG === 0) {

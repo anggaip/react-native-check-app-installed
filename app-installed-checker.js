@@ -8,6 +8,10 @@ class AppInstalledChecker {
         return Object.keys(APP_LIST)
     }
 
+    static convertAppNameToPackageName(key) {
+        return APP_LIST[key].pkgName
+    }
+
     static checkPackageName(packagename) {
         return new Promise((resolve, reject) => {
             CheckPackageInstallation.isPackageInstalled(packagename, (isInstalled) => {
@@ -37,7 +41,7 @@ class AppInstalledChecker {
     }
 
     static isAppInstalledAndroid(key) {
-        return this.checkPackageName(APP_LIST[key].pkgName)
+        return this.checkPackageName(key)
     }
 
     static isAppInstalledIOS(key) {
