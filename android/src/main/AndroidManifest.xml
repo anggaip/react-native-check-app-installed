@@ -1,14 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.rpt.reactnativecheckpackageinstallation">
-
-    <queries>
-        <package android:name="com.whatsapp" />
-        <package android:name="com.pinterest" />
-        <package android:name="com.facebook.katana" />
-        <package android:name="com.facebook.orca" />
-        <package android:name="com.skype.raider" />
-        <package android:name="com.tencent.mm" />
-        <package android:name="com.snapchat.android" />
-        <package android:name="com.twitter.android" />
-    </queries>
 </manifest>
