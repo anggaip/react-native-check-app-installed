@@ -1,4 +1,4 @@
-import AppInstalledChecker from './app-installed-checker';
-import CheckPackageInstallation from './android';
+import AppInstalledChecker from './app-installed-checker'
+import CheckPackageInstallation from './android'
 
-export { AppInstalledChecker, CheckPackageInstallation };
+export { AppInstalledChecker, CheckPackageInstallation }

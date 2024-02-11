@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
-import { NativeModules } from 'react-native';
-module.exports = NativeModules.CheckPackageInstallation;
+import { NativeModules } from 'react-native'
+module.exports = NativeModules.CheckPackageInstallation

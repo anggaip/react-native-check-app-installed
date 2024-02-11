@@ -48,6 +48,6 @@ AppInstalledChecker
         // isInstalled is true if the app is installed or false if not
     });
 ```
-You can retrieve the list of supported app names by calling `AppInstalledChecker.getAppList()` or check in [app-list.js](https://github.com/redpandatronicsuk/react-native-check-app-install/blob/master/app-list.js). If your app is not in the list, you will have to find out the URL scheme or package name and use either `isAppInstalledIOS(url)` or `isAppInstalledAndroid(pacakge-name)`.
+You can retrieve the list of supported app names by calling `AppInstalledChecker.getAppList()` or check in [app-list.ts](https://github.com/redpandatronicsuk/react-native-check-app-install/blob/master/app-list.ts). If your app is not in the list, you will have to find out the URL scheme or package name and use either `isAppInstalledIOS(url)` or `isAppInstalledAndroid(pacakge-name)`.
 
 Android package names can be found on the [Google PlayStore](https://play.google.com/store/search). For example, the URL for the Twitter app is *https://play.google.com/store/apps/details?id=com.twitter.android* the package name is the value of the id query parameter, i.e. **com.twitter.android**.
